@@ -1,0 +1,17 @@
+1).settings-um 2 hat dasht sarqel, knopka vor ktcnes bacv
+1-in@ 3 kam 4 hat guyn @ntrel
+2-rd speed slow,medium,high
+
+pahpanel ays 2 tvyalner@ browseri hishoxutyan mej, vor refreshic (u vapshe) heto mna nuyn@  
+---
+
+2).snake-i mej sarqel 2 urish class` vertical and horizontal, .snake-in tal dflex, sharzum@ irakanacnel .flex-ov (row and column)
+
+hima utel@
+
+ete aj-a (kam dzax) sharzvum avelacnel mi hat poch dzaxic (ajic),aysinqn .horizontal-in (verjum kam skzbum)
+verev nerqevi depqum nuyn ban@ uxxaki .vertical-i mej 
+
+---
+
+3) sharjum

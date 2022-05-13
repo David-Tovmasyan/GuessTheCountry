@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech", sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+}
+
+.navbar {
+  display: -ms-grid;
+  display: grid;
+  height: 70px;
+  grid-auto-flow: column;
+}
+
+.navbar .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70px;
+  position: relative;
+  right: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo .logo_name {
+  color: White;
+  font-size: 5vw;
+}
+
+.navbar .github_icon {
+  max-width: 70px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.header {
+  width: 100%;
+  height: 6vw;
+  background-color: #a8a7a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .settings_bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .settings_bar .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .settings_bar .bar .picker_header {
+  font-size: 3vw;
+}
+
+.header .settings_bar .bar .picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .settings_bar .bar .picker ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+}
+
+.header .settings_bar .bar .picker ul li {
+  border: 1px solid black;
+  height: 2vw;
+  width: 2vw;
+  border-radius: 100%;
+  background-color: green;
+}
+
+.header .settings_bar .bar .picker ul li input {
+  position: relative;
+  width: 100%;
+  height: 2vw;
+  border: 0;
+  border-radius: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .settings_bar .bar .picker ul li :checked {
+  -webkit-box-shadow: 0px 0px 10px 2px #000057;
+          box-shadow: 0px 0px 10px 2px #000057;
+}
+
+.header .settings_bar .bar .picker ul :nth-child(2) {
+  background-color: #d0d30e;
+}
+
+.header .settings_bar .bar .picker ul :nth-child(3) {
+  background-color: #c70f0f;
+}
+
+.game_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5vw;
+  font-size: 3vw;
+  color: aliceblue;
+}
+
+.game_wrapper .info_side {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5vw;
+}
+
+.game_wrapper .info_side .info :nth-child(1) {
+  text-decoration: underline;
+}
+
+.game_wrapper .game {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4vw;
+}
+
+.game_wrapper .game .input_side {
+  width: 17vw;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.game_wrapper .game .input_side input {
+  background-color: #0a0a0a;
+  font-size: 2vw;
+  color: #fff;
+  border: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 0;
+  outline: none;
+  text-indent: 0.8vw;
+  width: 93.5%;
+}
+
+.game_wrapper .game .input_side input:focus {
+  border: 0.05vw solid white;
+  border-bottom: 0;
+  padding: 0.5vw;
+}
+
+.game_wrapper .game .input_side input:focus ~ .underline {
+  width: 100%;
+}
+
+.game_wrapper .game .input_side input:focus ~ button {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.game_wrapper .game .input_side .underline {
+  display: block;
+  margin-bottom: 0.3vw;
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.game_wrapper .game .input_side button {
+  position: relative;
+  width: 50%;
+  border: 1px solid white;
+  background-color: #fff;
+  padding: 0.5vw;
+  cursor: pointer;
+  -webkit-transition: border-color 0.1s,-webkit-transform 0.7s;
+  transition: border-color 0.1s,-webkit-transform 0.7s;
+  transition: transform 0.7s,border-color 0.1s;
+  transition: transform 0.7s,border-color 0.1s,-webkit-transform 0.7s;
+}
+
+.game_wrapper .game .input_side button:hover {
+  background-color: black;
+  color: white;
+}
+
+.game_wrapper .game .input_side button:active {
+  border-color: green;
+}
+
+.game_wrapper .timer_container {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.game_wrapper .timer_container .timer {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes littleTime {
+  100% {
+    -webkit-transform: translateY(3%);
+            transform: translateY(3%);
+  }
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes littleTime {
+  100% {
+    -webkit-transform: translateY(3%);
+            transform: translateY(3%);
+  }
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
