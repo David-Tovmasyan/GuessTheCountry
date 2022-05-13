@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GuessTheCountry/styles/style.css">
+    <title>Guess the Country </title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="github_icon">
+            <a href="https://github.com/David-Tovmasyan"><img src="GuessTheCountry/images/github.webp" alt="Github Logo" width="70"
+                    height="70"></a>
+        </div>
+        <div class="logo">
+            <div class="logo_name">Guess The Country </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="settings_bar">
+            <div class="bar" id="color_bar">
+                <div class="picker_header">Difficulty </div>
+                <div class="picker">
+                    <ul>
+                        <li class="colors"><input type="radio" name="time" value="30" checked></li>
+                        <li class="colors"><input type="radio" name="time" value="20"></li>
+                        <li class="colors"><input type="radio" name="time" value="10"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bar" id="try_bar">
+                <div class="picker_header">Try Number</div>
+                <div class="picker">
+                    <ul>
+                        <li class="colors"><input type="radio" name="try" value="3"></li>
+                        <li class="colors"><input type="radio" name="try" value="2" checked></li>
+                        <li class="colors"><input type="radio" name="try" value="1"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="game_wrapper">
+        <div class="info_side">
+            <div class="info">
+                <label for="capital">Capital </label>
+                <div class="info_point"></div>
+            </div>
+            <div class="info">
+                <label for="continent">Continent </label>
+                <div class="info_point"></div>
+            </div>
+            <div class="info">
+                <label for="famous_person">Famous Person </label>
+                <div class="info_point"></div>
+            </div>
+        </div>
+        <div class="game">
+            <div class="score">
+                <div class="score_number">Score:</div>
+                <div class="try_number">Tries:</div>
+            </div>
+            <div class="input_side">
+                <input type="text" name="answer" id="answer" placeholder="Country ">
+                <div class="underline"></div>
+                <button>Answer</button>
+            </div>
+            
+        </div>
+        <div class="timer_container">
+            <div class="timer"></div>
+
+        </div>
+
+    </div>
+    <script src="GuessTheCountry/settings.js"></script>
+
+</body>
+
+</html>
